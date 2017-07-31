@@ -1,0 +1,14 @@
+var Entity = {
+   "items" : {
+      "id" : "123",
+      "name" : "iphone 7",
+      "price" : "2999.90",
+      "brand": "Apple"
+   }
+};
+
+thepatch = [
+        {"op"="replace", "path"="/name", "value"= "iphone 8"}
+]
+
+patchitem=jsonpatch.apply_patch ( Entity, patchitem);
